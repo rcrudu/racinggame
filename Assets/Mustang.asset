@@ -1,0 +1,989 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fdbaa7f7ea04540b9bf90caa7ced1d, type: 3}
+  m_Name: Mustang
+  m_EditorClassIdentifier: 
+  idleRPM: 800
+  redlineRPM: 6100
+  engineTorqueCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 280
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2000
+      value: 360
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 3500
+      value: 405
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 4600
+      value: 417
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 6000
+      value: 372
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 6800
+      value: 100
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  powerCurveDisplay:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.03940232
+      outSlope: 0.03940232
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 100
+      value: 3.940232
+      inSlope: 0.03963544
+      outSlope: 0.03963544
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 200
+      value: 7.927088
+      inSlope: 0.040303893
+      outSlope: 0.040303893
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 300
+      value: 12.001011
+      inSlope: 0.041343085
+      outSlope: 0.041343085
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 400
+      value: 16.195705
+      inSlope: 0.042685613
+      outSlope: 0.042685613
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 500
+      value: 20.538134
+      inSlope: 0.04426407
+      outSlope: 0.04426407
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 600
+      value: 25.04852
+      inSlope: 0.046011046
+      outSlope: 0.046011046
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 700
+      value: 29.740343
+      inSlope: 0.047859117
+      outSlope: 0.047859117
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 800
+      value: 34.620342
+      inSlope: 0.049740918
+      outSlope: 0.049740918
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 900
+      value: 39.688526
+      inSlope: 0.051588994
+      outSlope: 0.051588994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1000
+      value: 44.93814
+      inSlope: 0.05333595
+      outSlope: 0.05333595
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1100
+      value: 50.355717
+      inSlope: 0.0549144
+      outSlope: 0.0549144
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1200
+      value: 55.92102
+      inSlope: 0.056256905
+      outSlope: 0.056256905
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1300
+      value: 61.607098
+      inSlope: 0.057296142
+      outSlope: 0.057296142
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1400
+      value: 67.38025
+      inSlope: 0.057964608
+      outSlope: 0.057964608
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1500
+      value: 73.20002
+      inSlope: 0.058194883
+      outSlope: 0.058194883
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1600
+      value: 79.019226
+      inSlope: 0.057919655
+      outSlope: 0.057919655
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1700
+      value: 84.78395
+      inSlope: 0.057071455
+      outSlope: 0.057071455
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1800
+      value: 90.43352
+      inSlope: 0.05558281
+      outSlope: 0.05558281
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1900
+      value: 95.90051
+      inSlope: 0.0533865
+      outSlope: 0.0533865
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2000
+      value: 101.11082
+      inSlope: 0.052174605
+      outSlope: 0.052174605
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2100
+      value: 106.335434
+      inSlope: 0.053933255
+      outSlope: 0.053933255
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2200
+      value: 111.89747
+      inSlope: 0.05726803
+      outSlope: 0.05726803
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2300
+      value: 117.78904
+      inSlope: 0.06047924
+      outSlope: 0.06047924
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2400
+      value: 123.99332
+      inSlope: 0.06347698
+      outSlope: 0.06347698
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2500
+      value: 130.48444
+      inSlope: 0.06617142
+      outSlope: 0.06617142
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2600
+      value: 137.2276
+      inSlope: 0.06847267
+      outSlope: 0.06847267
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2700
+      value: 144.17897
+      inSlope: 0.07029076
+      outSlope: 0.07029076
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2800
+      value: 151.28575
+      inSlope: 0.07153587
+      outSlope: 0.07153587
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2900
+      value: 158.48615
+      inSlope: 0.07211822
+      outSlope: 0.07211822
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3000
+      value: 165.7094
+      inSlope: 0.07194786
+      outSlope: 0.07194786
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3100
+      value: 172.87572
+      inSlope: 0.07093483
+      outSlope: 0.07093483
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3200
+      value: 179.89636
+      inSlope: 0.06898941
+      outSlope: 0.06898941
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3300
+      value: 186.6736
+      inSlope: 0.06602165
+      outSlope: 0.06602165
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3400
+      value: 193.1007
+      inSlope: 0.061941605
+      outSlope: 0.061941605
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3500
+      value: 199.06192
+      inSlope: 0.058950044
+      outSlope: 0.058950044
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3600
+      value: 204.8907
+      inSlope: 0.059591904
+      outSlope: 0.059591904
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3700
+      value: 210.9803
+      inSlope: 0.06201393
+      outSlope: 0.06201393
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3800
+      value: 217.29349
+      inSlope: 0.06403336
+      outSlope: 0.06403336
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3900
+      value: 223.78697
+      inSlope: 0.06558944
+      outSlope: 0.06558944
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4000
+      value: 230.41138
+      inSlope: 0.066621244
+      outSlope: 0.066621244
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4100
+      value: 237.11122
+      inSlope: 0.0670681
+      outSlope: 0.0670681
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4200
+      value: 243.825
+      inSlope: 0.066869505
+      outSlope: 0.066869505
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4300
+      value: 250.48512
+      inSlope: 0.06596428
+      outSlope: 0.06596428
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4400
+      value: 257.01785
+      inSlope: 0.06429161
+      outSlope: 0.06429161
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4500
+      value: 263.34344
+      inSlope: 0.061791077
+      outSlope: 0.061791077
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4600
+      value: 269.37607
+      inSlope: 0.05727829
+      outSlope: 0.05727829
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4700
+      value: 274.7991
+      inSlope: 0.050158694
+      outSlope: 0.050158694
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4800
+      value: 279.4078
+      inSlope: 0.042443696
+      outSlope: 0.042443696
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 4900
+      value: 283.28784
+      inSlope: 0.035640564
+      outSlope: 0.035640564
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5000
+      value: 286.53592
+      inSlope: 0.029859923
+      outSlope: 0.029859923
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5100
+      value: 289.25983
+      inSlope: 0.025212556
+      outSlope: 0.025212556
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5200
+      value: 291.57843
+      inSlope: 0.021808777
+      outSlope: 0.021808777
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5300
+      value: 293.62158
+      inSlope: 0.019759063
+      outSlope: 0.019759063
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5400
+      value: 295.53024
+      inSlope: 0.019174194
+      outSlope: 0.019174194
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5500
+      value: 297.45642
+      inSlope: 0.020164642
+      outSlope: 0.020164642
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5600
+      value: 299.56317
+      inSlope: 0.022840576
+      outSlope: 0.022840576
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5700
+      value: 302.02454
+      inSlope: 0.027312774
+      outSlope: 0.027312774
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5800
+      value: 305.02573
+      inSlope: 0.03369217
+      outSlope: 0.03369217
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5900
+      value: 308.76297
+      inSlope: 0.042089082
+      outSlope: 0.042089082
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6000
+      value: 313.44354
+      inSlope: -0.0005363468
+      outSlope: -0.0005363468
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6100
+      value: 308.6557
+      inSlope: -0.047878418
+      outSlope: -0.047878418
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  peakHorsepower: 313.44354
+  peakTorque: 417
+  finalDriveRatio: 3.55
+  gearRatios:
+  - 3.38
+  - 2
+  - 1.32
+  - 1
+  - 0.67
+  calibratedWheelRadius: 0.345
+  transmissionMode: 0
+  engineInertia: 6500
+  engineDrag: 2500
+  carMass: 1500
+  brakeDistance: 35
+  calculatedBrakeTorque: 5705.278
+  turnSensitivity: 0.8
+  maxSteerAngle: 40
+  centerOfMass: {x: 0, y: -0.3, z: 0.23}
+  driveType: 1
+  steeringCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 100
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 200
+      value: 0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  driftGripMultiplier: 0.55
+  frontWheels:
+    suspensionDistance: 0.35
+    springRate: 32000
+    damper: 3500
+    forwardGrip: 1
+    sidewaysGrip: 1
+  rearWheels:
+    suspensionDistance: 0.35
+    springRate: 28000
+    damper: 3500
+    forwardGrip: 1.2
+    sidewaysGrip: 1
+  gears:
+  - name: Reverse
+    topSpeed: 63.85335
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 7.3988175
+    - rpm: 1050
+      acceleration: 7.7550607
+    - rpm: 1300
+      acceleration: 8.102301
+    - rpm: 1550
+      acceleration: 8.395518
+    - rpm: 1800
+      acceleration: 8.589697
+    - rpm: 2050
+      acceleration: 8.646999
+    - rpm: 2300
+      acceleration: 8.755843
+    - rpm: 2550
+      acceleration: 8.972731
+    - rpm: 2800
+      acceleration: 9.2376375
+    - rpm: 3050
+      acceleration: 9.490539
+    - rpm: 3300
+      acceleration: 9.6714115
+    - rpm: 3550
+      acceleration: 9.725644
+    - rpm: 3800
+      acceleration: 9.776514
+    - rpm: 4050
+      acceleration: 9.86797
+    - rpm: 4300
+      acceleration: 9.959428
+    - rpm: 4550
+      acceleration: 10.010298
+    - rpm: 4800
+      acceleration: 9.95218
+    - rpm: 5050
+      acceleration: 9.748909
+    - rpm: 5300
+      acceleration: 9.471811
+    - rpm: 5550
+      acceleration: 9.194715
+    - rpm: 5800
+      acceleration: 8.991443
+    - rpm: 6050
+      acceleration: 8.858253
+  - name: Gear 1
+    topSpeed: 66.12033
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 7.145144
+    - rpm: 1050
+      acceleration: 7.489173
+    - rpm: 1300
+      acceleration: 7.824507
+    - rpm: 1550
+      acceleration: 8.107672
+    - rpm: 1800
+      acceleration: 8.295193
+    - rpm: 2050
+      acceleration: 8.350532
+    - rpm: 2300
+      acceleration: 8.455643
+    - rpm: 2550
+      acceleration: 8.665094
+    - rpm: 2800
+      acceleration: 8.920918
+    - rpm: 3050
+      acceleration: 9.16515
+    - rpm: 3300
+      acceleration: 9.339821
+    - rpm: 3550
+      acceleration: 9.392194
+    - rpm: 3800
+      acceleration: 9.441319
+    - rpm: 4050
+      acceleration: 9.529641
+    - rpm: 4300
+      acceleration: 9.617962
+    - rpm: 4550
+      acceleration: 9.667088
+    - rpm: 4800
+      acceleration: 9.610963
+    - rpm: 5050
+      acceleration: 9.41466
+    - rpm: 5300
+      acceleration: 9.147064
+    - rpm: 5550
+      acceleration: 8.879467
+    - rpm: 5800
+      acceleration: 8.683166
+    - rpm: 6050
+      acceleration: 8.554541
+  - name: Gear 2
+    topSpeed: 111.74336
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 4.2278957
+    - rpm: 1050
+      acceleration: 4.4314632
+    - rpm: 1300
+      acceleration: 4.6298857
+    - rpm: 1550
+      acceleration: 4.797439
+    - rpm: 1800
+      acceleration: 4.908398
+    - rpm: 2050
+      acceleration: 4.9411426
+    - rpm: 2300
+      acceleration: 5.003339
+    - rpm: 2550
+      acceleration: 5.127275
+    - rpm: 2800
+      acceleration: 5.27865
+    - rpm: 3050
+      acceleration: 5.4231653
+    - rpm: 3300
+      acceleration: 5.5265207
+    - rpm: 3550
+      acceleration: 5.557511
+    - rpm: 3800
+      acceleration: 5.5865793
+    - rpm: 4050
+      acceleration: 5.6388407
+    - rpm: 4300
+      acceleration: 5.6911016
+    - rpm: 4550
+      acceleration: 5.72017
+    - rpm: 4800
+      acceleration: 5.6869597
+    - rpm: 5050
+      acceleration: 5.570805
+    - rpm: 5300
+      acceleration: 5.4124637
+    - rpm: 5550
+      acceleration: 5.2541223
+    - rpm: 5800
+      acceleration: 5.1379676
+    - rpm: 6050
+      acceleration: 5.061858
+  - name: Gear 3
+    topSpeed: 169.3081
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 2.7904112
+    - rpm: 1050
+      acceleration: 2.9247658
+    - rpm: 1300
+      acceleration: 3.0557249
+    - rpm: 1550
+      acceleration: 3.1663098
+    - rpm: 1800
+      acceleration: 3.239543
+    - rpm: 2050
+      acceleration: 3.2611542
+    - rpm: 2300
+      acceleration: 3.302204
+    - rpm: 2550
+      acceleration: 3.3840015
+    - rpm: 2800
+      acceleration: 3.4839091
+    - rpm: 3050
+      acceleration: 3.5792892
+    - rpm: 3300
+      acceleration: 3.6475039
+    - rpm: 3550
+      acceleration: 3.6679575
+    - rpm: 3800
+      acceleration: 3.6871426
+    - rpm: 4050
+      acceleration: 3.7216349
+    - rpm: 4300
+      acceleration: 3.756127
+    - rpm: 4550
+      acceleration: 3.7753124
+    - rpm: 4800
+      acceleration: 3.7533937
+    - rpm: 5050
+      acceleration: 3.6767316
+    - rpm: 5300
+      acceleration: 3.5722263
+    - rpm: 5550
+      acceleration: 3.467721
+    - rpm: 5800
+      acceleration: 3.3910587
+    - rpm: 6050
+      acceleration: 3.3408267
+  - name: Gear 4
+    topSpeed: 223.48672
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 2.1139479
+    - rpm: 1050
+      acceleration: 2.2157316
+    - rpm: 1300
+      acceleration: 2.3149428
+    - rpm: 1550
+      acceleration: 2.3987195
+    - rpm: 1800
+      acceleration: 2.454199
+    - rpm: 2050
+      acceleration: 2.4705713
+    - rpm: 2300
+      acceleration: 2.5016694
+    - rpm: 2550
+      acceleration: 2.5636375
+    - rpm: 2800
+      acceleration: 2.639325
+    - rpm: 3050
+      acceleration: 2.7115827
+    - rpm: 3300
+      acceleration: 2.7632604
+    - rpm: 3550
+      acceleration: 2.7787554
+    - rpm: 3800
+      acceleration: 2.7932897
+    - rpm: 4050
+      acceleration: 2.8194203
+    - rpm: 4300
+      acceleration: 2.8455508
+    - rpm: 4550
+      acceleration: 2.860085
+    - rpm: 4800
+      acceleration: 2.8434799
+    - rpm: 5050
+      acceleration: 2.7854025
+    - rpm: 5300
+      acceleration: 2.7062318
+    - rpm: 5550
+      acceleration: 2.6270611
+    - rpm: 5800
+      acceleration: 2.5689838
+    - rpm: 6050
+      acceleration: 2.530929
+  - name: Gear 5
+    topSpeed: 333.56226
+    accelerationCurve:
+    - rpm: 800
+      acceleration: 1.4163451
+    - rpm: 1050
+      acceleration: 1.4845402
+    - rpm: 1300
+      acceleration: 1.5510118
+    - rpm: 1550
+      acceleration: 1.6071421
+    - rpm: 1800
+      acceleration: 1.6443135
+    - rpm: 2050
+      acceleration: 1.6552829
+    - rpm: 2300
+      acceleration: 1.6761186
+    - rpm: 2550
+      acceleration: 1.7176372
+    - rpm: 2800
+      acceleration: 1.7683477
+    - rpm: 3050
+      acceleration: 1.8167604
+    - rpm: 3300
+      acceleration: 1.8513845
+    - rpm: 3550
+      acceleration: 1.8617662
+    - rpm: 3800
+      acceleration: 1.8715042
+    - rpm: 4050
+      acceleration: 1.8890116
+    - rpm: 4300
+      acceleration: 1.906519
+    - rpm: 4550
+      acceleration: 1.916257
+    - rpm: 4800
+      acceleration: 1.9051316
+    - rpm: 5050
+      acceleration: 1.8662198
+    - rpm: 5300
+      acceleration: 1.8131754
+    - rpm: 5550
+      acceleration: 1.760131
+    - rpm: 5800
+      acceleration: 1.7212192
+    - rpm: 6050
+      acceleration: 1.6957226
